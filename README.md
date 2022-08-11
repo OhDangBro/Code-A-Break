@@ -1,4 +1,3 @@
-# Code A Break
 # Title: Code A Break
 
 # Project Requirements
