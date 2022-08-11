@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const { User } = require('../../models');
 
+const { User, Option, Vote, Comment} = require('../../models');
+// const bcrypt = require('bcrypt');
 // get all users
 router.get('/', (req, res) => {
   User.findAll({
@@ -26,6 +27,11 @@ router.get('/:id', (req, res) => {
         return;
       }
       res.json(dbUserData);
+
+      // res.json({ User: dbUserData });
+
+      // Verify User
+
     })
     .catch(err => {
       console.log(err);
