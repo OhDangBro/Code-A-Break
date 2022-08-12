@@ -12,7 +12,7 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #225ca3 !important;
   font-weight: bold;
   transition: color .1s;
 }
@@ -23,6 +23,10 @@ a:hover {
 
 .box {
   background-color: #feca90 !important;
+ }
+
+ .boxs {
+  background-color: #ffe3ca;
  }
 
 
