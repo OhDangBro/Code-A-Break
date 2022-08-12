@@ -12,6 +12,7 @@ router.get('/:id', (req, res) => {
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
       ],
+      // route to vote data
       include: [
         {
           model: Post,
@@ -41,7 +42,13 @@ router.get('/:id', (req, res) => {
 
 // PUT /api/posts/upvote
 router.put('/upvote', (req, res) => {
-
+ // custom static method created in models/Post.js
+ Post.upvote(req.body, { Vote })
+ .then(updatedPostData => res.json(updatedPostData))
+ .catch(err => {
+   console.log(err);
+   res.status(400).json(err);
+ });
 });
 
 Vote.create({
