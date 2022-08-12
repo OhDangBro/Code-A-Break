@@ -1,7 +1,32 @@
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
+
+
+
+<div class="columns">
+  <div class="column is-one-quarter">
+    The Modules
+  </div>
+   <div class="column">
+    Third column
+  </div>
+  <div class="column is-half">
+   <article class="message">
+  <div class="message-header">
+    <p><ol class="post-list">
+  {{#each posts as |post|}}</p>
+    
+  </div>
+  <div class="message-body">
+    <li class="box">
     {{> post-info post }}
   </li>
   {{/each}}
 </ol>
+  </div>
+</article>
+  </div>
+  <div class="column">
+    Fourth column
+  </div>
+</div>
+
+

@@ -42,6 +42,13 @@ button:hover {
   background-color: #3486eb;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
 .post-list {
   margin: 0;
   padding: 0;
@@ -99,6 +106,15 @@ header h1 {
   background-repeat: no-repeat;
   background-color: #ffe3ca;
 }
+
+.postpic {
+  background-position: center;
+  background-size: contain;
+  background-image: url(/image/hero.jpeg);
+  background-repeat: no-repeat;
+  background-color: #ffe3ca;
+}
+
 
 main {
   flex: 1;
