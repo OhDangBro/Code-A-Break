@@ -7,69 +7,17 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
 </head>
-<section class="hero is-primary">
+<section class="hero is-medium is-link">
   <div class="hero-body">
     <p class="title">
-      Code A Break
+      Medium hero
     </p>
     <p class="subtitle">
-      A place to relax, when you want to throw your computer out the window.
+      Medium subtitle
     </p>
   </div>
 </section>
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Options
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Relax
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            Other
-          </a>
-          <a class="navbar-item">
-            Other 1
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Other 2
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
 
 <body>
   <div class="wrapper">
@@ -77,14 +25,14 @@
       <h1>
         <a href="/">Code A Break</a>
       </h1>
-      {{!-- <nav>
+      <nav>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
-      </nav> --}}
+      </nav>
     </header>
     <main>
       {{{ body }}}

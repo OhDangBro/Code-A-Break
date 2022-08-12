@@ -1,4 +1,6 @@
-<section>
+<div class="columns">
+  <div class="column">
+   <section>
   <h2>Create Post</h2>
 
   <form class="new-post-form">
@@ -13,8 +15,9 @@
     <button type="submit" class="btn">Create</button>
   </form>
 </section>
-
-{{#if posts.length}}
+  </div>
+  <div class="column">
+    {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
   <ol>
@@ -27,5 +30,10 @@
   </ol>
 </section>
 {{/if}}
+  </div>
+</div>
+
+
+
 
 <script src="/javascript/add-post.js"></script>
