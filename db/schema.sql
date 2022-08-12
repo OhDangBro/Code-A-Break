@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS Code_A_Break_db;
+DROP DATABASE IF EXISTS newsfeed_db;
 
-CREATE DATABASE Code_A_Break_db;
+CREATE DATABASE newsfeed_db;
