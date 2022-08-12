@@ -8,6 +8,7 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
+  background-color: #feca90 !important;
 }
 
 a {
@@ -210,4 +211,5 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+  background-color: #feca90 !important;
 }
