@@ -29,12 +29,18 @@ router.get('/', (req, res) => {
       }
     ]
   })
-    .then(dbOptionData => res.json(dbOptionData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+  .then(dbPostData => {
+    console.log(dbPostData[0]);
+    const posts = dbPostData.map(post => post.get({ plain: true }));
+    // res.render('homepage', dbPostData[0].get({ plain: true }));
+    res.render('homepage', { posts });
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
+
 
 router.get('/:id', (req, res) => {
   Option.findOne({
