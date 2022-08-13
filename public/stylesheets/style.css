@@ -10,19 +10,41 @@
     color: #333;
   }
   
+  /*  login*/
   a {
     text-decoration: none;
-    color: #ccd9e9;
+    /* color: #ccd9e9; */
+    color:  red;
     font-weight: bold;
     transition: color .1s;
+    font-size: 16px;
   }
   
   a:hover {
+    color: brown
+  }
+  
+  /* code a break */
+  h1 a {
+    text-decoration: none;
+    /* color: #ccd9e9; */
+    color: orange;
+    font-weight: bold;
+    transition: color .1s;
+    font-size: 36px;
+    border-radius: 5px;
+    transition: background-color .1s;
+   
+  }
+
+  h1 a:hover {
     color: #849c4b;
   }
   
+
+  /* login */
   button {
-    background-color: darkmagenta;
+    background-color: orange;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +55,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #849c4b;
   }
   
   .post-list {
@@ -97,7 +119,8 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    /* color: #225ca3; */
+    color: #1ceeaf;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -106,7 +129,7 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #110ee9;
   }
   
   .delete-post-btn {

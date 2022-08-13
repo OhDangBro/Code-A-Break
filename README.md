@@ -1,4 +1,5 @@
 # Title: Code A Break
+- A place to find encouragement to keep you coding in a healthy manner
 
 # Project Requirements
 
