@@ -4,10 +4,13 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "test": "jest",
-        "seeds": "node seeds/index.js",
-        "start": "node server.js"
-    },
+        "dev": "react-scripts start",
+        "start": "serve -s build",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "heroku-postbuild": "npm run build"
+        },
     "author": "",
     "license": "ISC",
     "dependencies": {
@@ -24,7 +27,8 @@
         "mysql2": "^2.3.3",
         "nodemon": "^2.0.19",
         "require": "^0.4.4",
-        "sequelize": "^5.22.5"
+        "sequelize": "^5.22.5",
+        "serve": "^14.0.1"
     },
     "devDependencies": {
         "jest": "^28.1.3"
