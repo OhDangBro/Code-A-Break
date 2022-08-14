@@ -53,7 +53,7 @@ const postdata = [
     title: 'Duis ac nibh.',
     post_url: 'https://levelup.gitconnected.com/the-funny-side-of-a-programmers-life-44cab153edf9',
     user_id: 9,
-    options_id: 'Music'
+    options_id: 'Exercise'
   },
   {
     title: 'Curabitur at ipsum ac tellus semper interdum.',
@@ -65,13 +65,13 @@ const postdata = [
     title: 'In hac habitasse platea dictumst.',
     post_url: 'http://china.com.cn/lectus/vestibulum.json',
     user_id: 3,
-    options_id: 'Music'
+    options_id: 'Exercise'
   },
   {
     title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
     post_url: 'https://javascript.plainenglish.io/20-funny-tweets-that-real-people-actually-tweeted-about-programming-960e9e5e324d',
     user_id: 10,
-    options_id: 'Music'
+    options_id: 'Exercise'
   },
   {
     title: 'Donec dapibus.',
