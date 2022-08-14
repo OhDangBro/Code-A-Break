@@ -19,19 +19,23 @@
 </section>
 
 
-<body>
+<body class="is-centered">
 
-   <header>
-      <nav class="menu">
+   <header class="is-centered">
+      <nav class="is-transparent">
         {{#if loggedIn}}
-        <a href="/dashboard">Dashboard</a>
-        <a href="/exercise">Exercise</a>
+        <a href="/dashboard" class="m-1">Dashboard</a>
+        <a href="/exercise" class="m-1">Exercise</a>
         <a href="/music">Music</a>
+        <a href="/outdoors">Outdoors</a>
+        <a href="/study">Study</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login">login</a>
         <a href="/music">Music</a>
         <a href="/exercise">Exercise</a>
+        <a href="/outdoors">Outdoors</a>
+        <a href="/study">Study</a>
         {{/if}}
       </nav>  
       

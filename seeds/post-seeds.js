@@ -16,32 +16,37 @@ const postdata = [
   {
     title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
     post_url: 'http://canada1.national.edu/the-10-best-brain-food-snacks-for-studying/',
+    post_text: 'sdfasdfasfasddsfds',
     user_id: 1,
     options_id: 'Music'
   },
   {
     title: 'Nunc purus.',
     post_url: 'https://www.buzzfeed.com/tashweenali/snacks-for-studying',
+    post_text: 'sdfasdfasfasddsfds',
     user_id: 4,
     options_id: 'Music'
   },
   {
     title: 'Pellentesque eget nunc.',
     post_url: 'https://www.freecodecamp.org/news/best-developer-communities-to-be-part-of-in-2020/	',
+    post_text: 'sdfasdfasfasddsfds',
     user_id: 7,
     options_id: 'Music'
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
     post_url: 'https://stanford.edu/consequat.png',
+    post_text: 'sdfasdfasfasddsfds',
     user_id: 4,
     options_id: 'Music'
   },
   {
     title: 'In hac habitasse platea dictumst.',
     post_url: 'https://www.nytimes.com/wirecutter/blog/free-home-workouts/	',
+    post_text: 'sdfasdfasfasddsfds',
     user_id: 1,
-    options_id: 'Music'
+    options_id: 'Outdoors'
   },
   {
     title: 'Morbi non quam nec dui luctus rutrum.',
