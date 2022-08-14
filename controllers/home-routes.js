@@ -72,7 +72,7 @@ router.get('/music', (req, res) => {
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
-      res.render('homepage', {
+      res.render('music', {
         posts,
         loggedIn: req.session.loggedIn
       });
@@ -114,7 +114,7 @@ router.get('/exercise', (req, res) => {
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
-      res.render('homepage', {
+      res.render('exercise', {
         posts,
         loggedIn: req.session.loggedIn
       });
@@ -156,7 +156,7 @@ router.get('/outdoors', (req, res) => {
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
-      res.render('homepage', {
+      res.render('outdoors', {
         posts,
         loggedIn: req.session.loggedIn
       });
@@ -197,48 +197,7 @@ router.get('/study', (req, res) => {
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
-      res.render('homepage', {
-        posts,
-        loggedIn: req.session.loggedIn
-      });
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
-router.get('/encouragement', (req, res) => {
-  console.log('======================');
-  Post.findAll({
-    where: {
-      options_id: "Encouragement"
-    },
-    attributes: [
-      'id',
-      'post_url',
-      'title',
-      'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-    ],
-    include: [
-      {
-        model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-        include: {
-          model: User,
-          attributes: ['username']
-        }
-      },
-      {
-        model: User,
-        attributes: ['username']
-      }
-    ]
-  })
-    .then(dbPostData => {
-      const posts = dbPostData.map(post => post.get({ plain: true }));
-
-      res.render('homepage', {
+      res.render('codinghelp', {
         posts,
         loggedIn: req.session.loggedIn
       });

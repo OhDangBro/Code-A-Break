@@ -16,7 +16,7 @@ async function newFormHandler(event) {
       'Content-Type': 'application/json'
     }
   });
-  console.log('this is the option', options_id)
+  console.log('this is the option')
 
   if (response.ok) {
     document.location.replace('/dashboard');
