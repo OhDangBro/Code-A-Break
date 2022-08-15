@@ -38,7 +38,7 @@ button {
   
   border: 0;
   padding: 1%;
-  color: white;
+  color: #3650489c;
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -173,12 +173,12 @@ main {
 }
 
 .upvote-btn {
-  background-color: #197d0f;
+  background-color: #197d0f6e;
   transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-  background-color: #1f9c13;
+  background-color: #197d0f8f;
 }
 
 .comment-form {
