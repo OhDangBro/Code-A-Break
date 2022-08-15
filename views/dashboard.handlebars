@@ -1,5 +1,5 @@
 <div class="columns">
-  <div class="column box">
+  <div class="column box has-background-info">
    <section>
 </figure>
   <img src="/image/createpost.jpg" alt="createpostpic" class="center" width="100" height="100">
@@ -14,15 +14,25 @@
     
     <div>
       <label for="post-url">Link</label>
-      <input id="post-url" name="post-url" />
+      <input  id="post-url" name="post-url" />
     </div>
+    <div class="select is-centered">
+  <select>
+    <option>Coding Help</option>
+    <option>Exercise</option>
+    <option>Music</option>
+    <option>Outdoors</option>
+    <option>Food</option>
+    <option>Study</option>
+  </select>
+</div>
     
     <button type="submit" class="btn">Create</button>
   </form>
 </section>
   </div>
   <div class="column is-one-fifth">
-    <div>.</div>
+  
   </div>
   <div class="column box">
     {{#if posts.length}}

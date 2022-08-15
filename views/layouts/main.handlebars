@@ -12,16 +12,34 @@
     <p class="title">
       
     </p>
-    <p class="subtitle">
+    <p class="subtitle has-text-centered">
       Take A Break From Coding
     </p>
   </div>
 </section>
 
 
-<body>
+<body class="is-centered">
 
-     
+   <header class="navback">
+      <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard" class="m-1">Dashboard</a>
+        <a href="/exercise" class="m-1">Exercise</a>
+        <a href="/music">Music</a>
+        <a href="/outdoors">Outdoors</a>
+        <a href="/food">Food</a>
+        <a href="/study">Study</a>
+        <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        <a href="/music">Music</a>
+        <a href="/exercise">Exercise</a>
+        <a href="/outdoors">Outdoors</a>
+        <a href="/food">Food</a>
+        <a href="/study">Study</a>
+        {{/if}}
+      </nav>  
       
     </header>
     <main>
@@ -29,15 +47,6 @@
     </main>
     <footer>
         <div class="wrapper">
-    <header>
-      <nav class="menu">
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
     </footer>
   </div>
   
