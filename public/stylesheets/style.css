@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 body, html {
@@ -8,14 +8,16 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
-  background-color: #feca90 !important;
+  
+  
 }
 
 a {
   text-decoration: none;
-  color: #225ca3 !important;
+  color: #224aa38c !important;
   font-weight: bold;
   transition: color .1s;
+  padding: 70px;
 }
 
 a:hover {
@@ -23,7 +25,7 @@ a:hover {
 }
 
 .box {
-  background-color: #feca90 !important;
+  background-color: #1bc5e845 !important;
  }
 
  .boxs {
@@ -33,7 +35,7 @@ a:hover {
 
 
 button {
-  background-color: #5489ff !important;
+  
   border: 0;
   padding: 1%;
   color: white;
@@ -98,6 +100,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+
 }
 
 header h1 {
@@ -124,7 +127,7 @@ header h1 {
 main {
   flex: 1;
   padding: 2% 4%;
-  background-color: #ffe3ca;
+  background-color: #caeaff;
 }
 
 .btn-no-style {
@@ -133,7 +136,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #225ca3 !important;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -203,6 +206,10 @@ main {
 
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+.navback {
+  background-color: #197d0f4f;
 }
 
 footer {
