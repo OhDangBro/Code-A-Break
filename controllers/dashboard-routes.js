@@ -1,14 +1,19 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const {  User, Option, Comment, Vote } = require('../models');
+const { Option, User, Comment, Vote } = require('../models');
+const withAuth = require('../utils/auth');
 
-
-router.get('/', (req, res) => {
+// get all Options for dashboard
+router.get('/', withAuth, (req, res) => {
+  console.log(req.session);
   console.log('======================');
   Option.findAll({
+    where: {
+      user_id: req.session.user_id
+    },
     attributes: [
       'id',
-      'option_url',
+      'otion_url',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE option.id = vote.option_id)'), 'vote_count']
@@ -28,13 +33,9 @@ router.get('/', (req, res) => {
       }
     ]
   })
-    .then(dboptionData => {
-      const options = dboptionData.map(option => option.get({ plain: true }));
-
-      res.render('homepage', {
-        options,
-        loggedIn: req.session.loggedIn
-      });
+    .then(dbOptionData => {
+      const options = dbOptionData.map(option => option.get({ plain: true }));
+      res.render('dashboard', { options, loggedIn: true });
     })
     .catch(err => {
       console.log(err);
@@ -42,12 +43,8 @@ router.get('/', (req, res) => {
     });
 });
 
-// get single option
-router.get('/option/:id', (req, res) => {
-  Option.findOne({
-    where: {
-      id: req.params.id
-    },
+router.get('/edit/:id', withAuth, (req, res) => {
+  Option.findByPk(req.params.id, {
     attributes: [
       'id',
       'option_url',
@@ -71,31 +68,20 @@ router.get('/option/:id', (req, res) => {
     ]
   })
     .then(dbOptionData => {
-      if (!dbOptionData) {
-        res.status(404).json({ message: 'No option found with this id' });
-        return;
+      if (dbOptionData) {
+        const Option = dbOptionData.get({ plain: true });
+        
+        res.render('edit-option', {
+          Option,
+          loggedIn: true
+        });
+      } else {
+        res.status(404).end();
       }
-
-      const option = dbOptionData.get({ plain: true });
-
-      res.render('single-option', {
-        option,
-        loggedIn: req.session.loggedIn
-      });
     })
     .catch(err => {
-      console.log(err);
       res.status(500).json(err);
     });
-});
-
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-
-  res.render('login');
 });
 
 module.exports = router;
