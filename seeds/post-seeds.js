@@ -8,27 +8,27 @@ const postdata = [
     options_id: 'Music'
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
+    title: 'Excercise',
     post_url: 'https://www.coursera.org/articles/study-habits',
     user_id: 8,
     options_id: 'Music'
   },
   {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
+    title: 'Music',
     post_url: 'http://canada1.national.edu/the-10-best-brain-food-snacks-for-studying/',
     post_text: 'sdfasdfasfasddsfds',
     user_id: 1,
     options_id: 'Music'
   },
   {
-    title: 'Nunc purus.',
+    title: 'Outdoors',
     post_url: 'https://www.buzzfeed.com/tashweenali/snacks-for-studying',
     post_text: 'sdfasdfasfasddsfds',
     user_id: 4,
     options_id: 'Music'
   },
   {
-    title: 'Pellentesque eget nunc.',
+    title: 'Snacks',
     post_url: 'https://www.freecodecamp.org/news/best-developer-communities-to-be-part-of-in-2020/	',
     post_text: 'sdfasdfasfasddsfds',
     user_id: 7,
