@@ -13,11 +13,13 @@ body, html {
 }
 
 a {
+  
   text-decoration: none;
   color: #224aa38c !important;
   font-weight: bold;
   transition: color .1s;
   padding: 70px;
+  border: 0;
 }
 
 a:hover {
@@ -136,7 +138,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3 !important;
+  color: #225ca3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -149,11 +151,11 @@ main {
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #d414149c
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #d41414b8
 }
 
 .post {
@@ -191,7 +193,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #ebecff9c
 }
 
 .comment .meta {
