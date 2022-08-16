@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'post_text',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -50,6 +51,7 @@ router.get('/music', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'post_text',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -92,6 +94,7 @@ router.get('/exercise', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'post_text',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -134,6 +137,7 @@ router.get('/outdoors', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'post_text',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -176,6 +180,7 @@ router.get('/food', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'post_text',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -219,6 +224,7 @@ router.get('/study', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'post_text',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
@@ -263,6 +269,7 @@ router.get('/post/:id', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'post_text',
       'title',
       'created_at',
       [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
