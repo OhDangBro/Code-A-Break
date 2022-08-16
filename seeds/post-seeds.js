@@ -2,15 +2,15 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Coding Help.',
-    post_url: 'https://www.freecodecamp.org/news/best-developer-communities-to-be-part-of-in-2020/',
-    post_text: 'This worked',
+    title: 'Youtube Music Jams',
+    post_url: 'https://music.youtube.com/browse/FEmusic_genre_selection',
+    post_text: 'This is where I listen to my music!',
     user_id: 10,
     options_id: 'Music'
   },
   {
-    title: 'Excercise',
-    post_url: 'https://www.coursera.org/articles/study-habits',
+    title: 'Coding ',
+    post_url: 'https://www.youtube.com/watch?v=M5QY2_8704o',
     post_text: 'This worked',
     user_id: 8,
     options_id: 'Music'
