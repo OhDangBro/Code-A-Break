@@ -136,12 +136,13 @@ const postdata = [
     options_id: 'Music'
   },
   {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
+    title: 'blah blah blah ',
     post_url: 'https://java.com/at/nibh/in.png',
     post_text: 'This worked',
     user_id: 7,
     options_id: 'Music'
   }
+  
 ];
 
 const seedPosts = () => Post.bulkCreate(postdata);
