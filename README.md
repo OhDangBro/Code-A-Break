@@ -1,33 +1,50 @@
-# BOOTCAMP PROJECT 2
+# Code A Break
+# Title: Code A Break
 
-CODE-A-BREAK
+# Project Requirements
 
-## DESCRIPTION
+* Use Node.js and Express.js to create a RESTful API.
 
-This webpage was created to help all the coders out there who are looking for a bit of motivation to keep going or some recommendations on what to do when you just need a break.
-On our site you will find;
 
-    * Posts from other users regarding different coding topics, packages, tools.
-    * Posts about what worked for them or what didn't work while coding.
-    * Recommendations on activities, music, snack-breaks, workouts, study tips.
-    * An entire community of individuals that are on the coding journey!
+* Use Handlebars.js as the templating engine.
 
-### Technologies Used
-JS
-Node
-Express
-Handlebars
-Heroku
-Sequelize
-MySQL
-Bulma
-Bcrypt
-Nodemon
+* Use Mssql and the Sequelize ORM for the database
 
-#### Screenshot
+* Have both GET and POST routes for retrieving and adding new data.
 
-![alt text](./public/image/IMG_5649.jpeg "snapshot")
+* Be deployed using Heroku (with data).
 
-##### Deployment
+* Use at least one new library. Package, or technology that we haven’t discussed.
 
-https://codeabreak.herokuapp.com
+* Be responsive.
+
+* Have a polished UI.
+
+* Be interactive (i.e., accept and respond to user input).
+
+* Have folder structure that meets the MVC paradigm.
+
+* Include authentication (express-session and cookies).
+
+* Protect API keys and sensitive information with environment variables.
+
+* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+
+* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+## Deployment
+
+* Application deployed at live URL on Heroku and loads with no errors.
+
+* Application GitHub URL submitted.
+
+* Portfolio at live URL submitted, featuring project.
+
+
+* Finally, you must add your project to the portfolio that you created in Module 2.
+
+
+
+---
+© 2022 Project2 Group3
+

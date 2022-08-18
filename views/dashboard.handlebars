@@ -1,0 +1,61 @@
+<div class="columns">
+  <div class="column box has-background-info">
+   <section>
+</figure>
+  <img src="/image/createpost.jpg" alt="createpostpic" class="center" width="100" height="100">
+  <div class="postpic"></div>
+  
+
+  <form class="new-post-form ">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    
+    <div>
+      <label for="post-url">Link</label>
+      <input  id="post-url" name="post-url" />
+    </div>
+    <div>
+      <label for="post_text">Post</label>
+      <input class="post_text" id="post_text" name="post_text" />
+    </div>
+    <div class="select is-centered">
+  <select>
+    <option>Exercise</option>
+    <option>Music</option>
+    <option>Outdoors</option>
+    <option>Food</option>
+    <option>Study</option>
+  </select>
+</div>
+    
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+  </div>
+  <div class="column is-one-fifth">
+  
+  </div>
+  <div class="column box">
+    {{#if posts.length}}
+<section>
+  
+  <img src="/image/yourpost.jpg" alt="yourpostpic" class="center" width="100" height="100">
+  <ol class="boxs">
+    {{#each posts as |post|}}
+    <li class="box">
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+  </div>
+</div>
+
+
+
+
+<script src="/javascript/add-post.js"></script>

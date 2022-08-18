@@ -1,0 +1,41 @@
+{{!-- <article class="post">
+  <div class="title">
+    <a href="{{post_url}}" target="_blank">{{title}}</a>
+    <span>({{format_url post_url}})</span>
+  </div>
+  <div class="meta">
+    {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div>
+</article> --}}
+
+<div class="box">
+  <article class="media">
+   
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong class="media-left">{{user.username}} said:</strong> 
+          <br>
+          <small><div class="is-centered">
+    <span>({{format_url post_url}})</span>
+    <br>
+    <small><a href="{{post_url}}" target="_blank">{{title}}</a></small>
+  </div></small> 
+  <br>
+          <br>
+          <p>{{post_text}}</p> 
+          <br>
+          <small> <div class="meta">
+            <br>
+    {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
+    |
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div></small>
+        </p>
+      </div>
+      
+    </div>
+  </article>
+</div>
