@@ -26,7 +26,8 @@ Nodemon
 
 #### Screenshot
 
-(./public/image/IMG_5649.jpeg "snapshot")
+![IMG_5649](https://user-images.githubusercontent.com/74940144/185286780-1ace8f53-6564-4322-8431-5c4868db6b7e.jpeg)
+
 
 ##### Deployment
 
