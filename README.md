@@ -1,49 +1,36 @@
-# Code A Break
-# Title: Code A Break
+# BOOTCAMP PROJECT 2
 
-# Project Requirements
+CODE-A-BREAK
 
-* Use Node.js and Express.js to create a RESTful API.
+## DESCRIPTION
 
+This webpage was created to help all the coders out there who are looking for a bit of motivation to keep going or some recommendations on what to do when you just need a break.
+On our site you will find;
 
-* Use Handlebars.js as the templating engine.
+    * Posts from other users regarding different coding topics, packages, tools.
+    * Posts about what worked for them or what didn't work while coding.
+    * Recommendations on activities, music, snack-breaks, workouts, study tips.
+    * An entire community of individuals that are on the coding journey!
 
-* Use Mssql and the Sequelize ORM for the database
+### Technologies Used
+JS
+Node
+Express
+Handlebars
+Heroku
+Sequelize
+MySQL
+Bulma
+Bcrypt
+Nodemon
 
-* Have both GET and POST routes for retrieving and adding new data.
+#### Screenshot
 
-* Be deployed using Heroku (with data).
+![alt text](./public/image/IMG_5649.jpeg "snapshot")
 
-* Use at least one new library. Package, or technology that we haven’t discussed.
+##### Deployment
 
-* Be responsive.
-
-* Have a polished UI.
-
-* Be interactive (i.e., accept and respond to user input).
-
-* Have folder structure that meets the MVC paradigm.
-
-* Include authentication (express-session and cookies).
-
-* Protect API keys and sensitive information with environment variables.
-
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-## Deployment
-
-* Application deployed at live URL on Heroku and loads with no errors.
-
-* Application GitHub URL submitted.
-
-* Portfolio at live URL submitted, featuring project.
-
-
-* Finally, you must add your project to the portfolio that you created in Module 2.
-
-
+https://codeabreak.herokuapp.com
 
 ---
 © 2022 Project2 Group3
