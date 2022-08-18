@@ -26,7 +26,7 @@ Nodemon
 
 #### Screenshot
 
-![alt text](./public/image/IMG_5649.jpeg "snapshot")
+(./public/image/IMG_5649.jpeg "snapshot")
 
 ##### Deployment
 
