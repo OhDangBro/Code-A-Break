@@ -31,7 +31,6 @@ Nodemon
 ##### Deployment
 
 https://codeabreak.herokuapp.com
+=======
 
----
-© 2022 Project2 Group3
 
